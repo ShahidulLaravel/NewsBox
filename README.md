@@ -8,11 +8,12 @@
 * Bootstrap
 * PHP 8
 * Larevel 9
+* MySql Database
 
 ## Feature's 
 
 * Login
-* Regsiter
+* Register
 * Admin Panel
 * News Update Dynamically
 
