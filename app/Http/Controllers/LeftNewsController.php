@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\InternationalNews;
 use App\Models\LeftNews;
-use App\Models\PopularNews;
+use App\Models\SideNews;
 use App\Models\TitleNews;
+use App\Models\PopularNews;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Models\InternationalNews;
 use Illuminate\Support\Facades\Auth;
 use Intervention\Image\Facades\Image;
 
@@ -73,5 +74,19 @@ class LeftNewsController extends Controller
             'title_photo' => $file_name
         ]);
         return back()->with('success_two', 'International News Addedd Successfully');
+    }
+
+    public function side_news(Request $request)
+    {
+        $uploaded_photo = $request->photo;
+        $extension = $uploaded_photo->getClientOriginalExtension();
+        $file_name = Str::lower(str_replace(' ', '-', 'side_news')) . '-' . rand(10, 100000) . '.' . $extension;
+        Image::make($uploaded_photo)->save('Uploads/Sidenews/' . $file_name);
+
+        SideNews::insert([
+            'headline' => $request->headline,
+            'photo' => $file_name
+        ]);
+        return back()->with('success_three', 'International News Addedd Successfully');
     }
 }

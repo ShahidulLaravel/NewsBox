@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,16 +6,9 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Title -->
     <title>NewsBox</title>
-
-    <!-- Favicon -->
     <link rel="icon" href="{{asset('Frontend/img/core-img/favicon.ico')}}">
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="{{asset('Frontend/style.css')}}">
-
 </head>
 
 <body>
@@ -143,8 +135,7 @@
                                         <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a></a></li>
                                     @endif
                                 @endauth
-                </div>
-                             
+                                </div>              
                             </div>
                             <!-- Nav End -->
                         </div>
@@ -356,9 +347,28 @@
                                 <img src="img/bg-img/add3.png" alt="">
                             </a>
                         </div>
+                    </div>
+                    <div>
+                       <!-- Single latest title small News Area -->
+                        @foreach ($side_news as $side )
+                        <div class="">
+                            <div style="border-bottom: 1px solid gray;" class="mb-5 single-blog-post d-flex style-4 mb-30">
+                                <!-- Blog Thumbnail -->
+                                <div class="blog-thumbnail">
+                                    <a href="#"><img src="{{asset('Uploads/Sidenews')}}/{{$side->photo}}" alt=""></a>
+                                </div>
 
+                                <!-- Blog Content -->
+                                <div class="blog-content">
+                                    
+                                    <a href="#" class="post-title">{{$side->headline}}</a>
+                                </div>
+                            </div>
+                        </div>       
+                        @endforeach 
                     </div>
                 </div>
+                >
             </div>
         </div>
     </section>

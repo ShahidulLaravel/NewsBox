@@ -9,6 +9,7 @@ use App\Models\BreakingNews;
 use Illuminate\Http\Request;
 use App\Models\InternationalNews;
 use App\Models\NewsCategory;
+use App\Models\SideNews;
 
 class Frontend extends Controller
 {
@@ -19,13 +20,15 @@ class Frontend extends Controller
         $international_news = InternationalNews::all();
         $title_news = TitleNews::all();
         $category = NewsCategory::all();
+        $side_news = SideNews::all();
         return view('index',[
             'all_news_show' => $all_news_show,
             'left_news' => $left_news,
             'popular_news' => $popular_news,
             'international_news' => $international_news,
             'title_news' => $title_news,
-            'category' => $category
+            'category' => $category,
+            'side_news'=> $side_news
         ]);
     }
 

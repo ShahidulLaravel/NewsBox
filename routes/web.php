@@ -44,6 +44,8 @@ Route::post('/insert/popular_news', [LeftNewsController::class, 'popular_news'])
 
 Route::post('/insert/international_news', [LeftNewsController::class, 'international_news'])->name('international.news');
 
+Route::post('/insert/side_news', [LeftNewsController::class, 'side_news'])->name('side.news');
+
 //title news
 
 Route::get('/show/title_news', [LeftNewsController::class, 'title_news'])->name('news.title');
