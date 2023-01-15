@@ -126,6 +126,24 @@
               <ul class="collapse list-unstyled pl-4 w-100" id="left_news">
                 <li class="nav-item">
                   <a class="nav-link pl-3" href="{{route('news.left')}}"><span class="ml-1 item-text">Add Left News</span>
+
+                  <a class="nav-link pl-3" href="{{route('news.title')}}"><span class="ml-1 item-text">Add Title News</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            {{-- copy end --}}
+
+            {{-- copy this --}}
+            <li class="nav-item dropdown">
+              <a href="#news_category" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                <i class="fe fe-box fe-16"></i>
+                <span class="ml-3 item-text">News Category</span>
+              </a>
+              <ul class="collapse list-unstyled pl-4 w-100" id="news_category">
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="{{route('add.category')}}"><span class="ml-1 item-text">Add Category</span>
+                 
                   </a>
                 </li>
               </ul>

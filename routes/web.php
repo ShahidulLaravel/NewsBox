@@ -3,6 +3,7 @@
 use App\Http\Controllers\Frontend;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LeftNewsController;
+use App\Http\Controllers\NewsCategoryController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\UserController;
 use App\Models\BreakingNews;
@@ -42,5 +43,19 @@ Route::post('/insert/left_news', [LeftNewsController::class, 'insert_left_news']
 Route::post('/insert/popular_news', [LeftNewsController::class, 'popular_news'])->name('popular.news');
 
 Route::post('/insert/international_news', [LeftNewsController::class, 'international_news'])->name('international.news');
+
+//title news
+
+Route::get('/show/title_news', [LeftNewsController::class, 'title_news'])->name('news.title');
+
+Route::post('/insert/title_news', [LeftNewsController::class, 'insert_title_news'])->name('title_news.insert');
+
+//add news category 
+
+Route::get('/show/news_category', [NewsCategoryController::class, 'news_category'])->name('add.category'); 
+
+Route::post('/insert/news_category', [NewsCategoryController::class, 'news_category_insert'])->name('category.insert'); 
+ 
+
 
 

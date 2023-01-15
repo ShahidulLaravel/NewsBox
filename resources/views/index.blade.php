@@ -228,100 +228,23 @@
                                    {{-- small news --}}
 
                                     <!-- Single News Area -->
+                                    @foreach ($title_news as $title )
                                     <div class="col-12 col-sm-6">
                                         <div class="single-blog-post d-flex style-4 mb-30">
                                             <!-- Blog Thumbnail -->
                                             <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/16.jpg')}}" alt=""></a>
+                                                <a href="#"><img src="{{asset('Uploads/Title')}}/{{$title->title_photo}}" alt=""></a>
                                             </div>
 
                                             <!-- Blog Content -->
                                             <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
+                                                <span class="post-date">{{ \Carbon\Carbon::parse($left->from_date)->format('d :M :Y')}}</span>
+                                                <a href="#" class="post-title">{{$title->title_headline}}</a>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/17.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/18.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Top bitcoin exchange says over $30 million stolen</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/19.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Top bitcoin exchange says over $30 million stolen</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/20.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Dow falls 287 points as trade war fears escalate</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/21.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Dow falls 287 points as trade war fears escalate</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div>       
+                                    @endforeach
+                                   
                                 </div>
                             </div>
 
@@ -347,102 +270,23 @@
                                     </div>
                                     @endforeach
 
-
                                     <!-- Single News Area -->
+                                    @foreach ($title_news as $title )
                                     <div class="col-12 col-sm-6">
                                         <div class="single-blog-post d-flex style-4 mb-30">
                                             <!-- Blog Thumbnail -->
                                             <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/16.jpg')}}" alt=""></a>
+                                                <a href="#"><img src="{{asset('Uploads/Title')}}/{{$title->title_photo}}" alt=""></a>
                                             </div>
 
                                             <!-- Blog Content -->
                                             <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
+                                                <span class="post-date">{{ \Carbon\Carbon::parse($left->from_date)->format('d :M :Y')}}</span>
+                                                <a href="#" class="post-title">{{$title->title_headline}}</a>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/17.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/18.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Top bitcoin exchange says over $30 million stolen</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/19.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Top bitcoin exchange says over $30 million stolen</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/20.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Dow falls 287 points as trade war fears escalate</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/21.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Dow falls 287 points as trade war fears escalate</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div>       
+                                    @endforeach
                                 </div>
                             </div>
 
@@ -468,106 +312,26 @@
                                     </div>
                                     @endforeach
 
-                                    
-
-                                    <!-- Single News Area -->
+                                
+                                    <!-- Single latest title small News Area -->
+                                    @foreach ($title_news as $title )
                                     <div class="col-12 col-sm-6">
                                         <div class="single-blog-post d-flex style-4 mb-30">
                                             <!-- Blog Thumbnail -->
                                             <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/16.jpg')}}" alt=""></a>
+                                                <a href="#"><img src="{{asset('Uploads/Title')}}/{{$title->title_photo}}" alt=""></a>
                                             </div>
 
                                             <!-- Blog Content -->
                                             <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
+                                                <span class="post-date">{{ \Carbon\Carbon::parse($left->from_date)->format('d :M :Y')}}</span>
+                                                <a href="#" class="post-title">{{$title->title_headline}}</a>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/17.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/18.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Top bitcoin exchange says over $30 million stolen</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/19.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Top bitcoin exchange says over $30 million stolen</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/20.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Dow falls 287 points as trade war fears escalate</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/21.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Dow falls 287 points as trade war fears escalate</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div>       
+                                    @endforeach
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -604,115 +368,27 @@
     <div class="top-news-area section-padding-100">
         <div class="container">
             <div class="row">
-
+                @foreach ($category as $cat )               
                 <!-- Single News Area -->
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-blog-post style-2 mb-5">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="{{asset('Frontend/img/bg-img/4.jpg')}}" alt=""></a>
+                       <div class="card" style="height: 450px;">
+                        <div class="card-header">
+                             <div class="blog-content">
+                                <a href="#" class=""><h3> <div class="blog-content">
+                                <a href="#" class="post-title">{{$cat->category_name}}</a>
+                            </div></h3></a>
+                            </div>
                         </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                            <a href="#" class="post-author">By Michael Smith</a>
+                        <div class="card-body">
+                            <div class="blog-thumbnail">
+                                <a href="#"><img style="height:280px;" src="{{asset('Uploads/Category')}}/{{$cat->category_image}}" alt=""></a>
+                            </div>         
                         </div>
+                       </div>
                     </div>
                 </div>
-
-                <!-- Single News Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-blog-post style-2 mb-5">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="{{asset('Frontend/img/bg-img/5.jpg')}}" alt=""></a>
-                        </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis </a>
-                            <a href="#" class="post-author">By Michael Smith</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single News Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-blog-post style-2 mb-5">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="{{asset('Frontend/img/bg-img/6.jpg')}}" alt=""></a>
-                        </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <a href="#" class="post-title">Dow falls 287 points as trade war fears escalate</a>
-                            <a href="#" class="post-author">By Michael Smith</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single News Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-blog-post style-2 mb-5">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="{{asset('Frontend/img/bg-img/7.jpg')}}" alt=""></a>
-                        </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                            <a href="#" class="post-author">By Michael Smith</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single News Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-blog-post style-2 mb-5">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="{{asset('Frontend/img/bg-img/8.jpg')}}" alt=""></a>
-                        </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis </a>
-                            <a href="#" class="post-author">By Michael Smith</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single News Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-blog-post style-2 mb-5">
-                        <!-- Blog Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <a href="#"><img src="{{asset('Frontend/img/bg-img/9.jpg')}}" alt=""></a>
-                        </div>
-
-                        <!-- Blog Content -->
-                        <div class="blog-content">
-                            <span class="post-date">June 20, 2018</span>
-                            <a href="#" class="post-title">Dow falls 287 points as trade war fears escalate</a>
-                            <a href="#" class="post-author">By Michael Smith</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="load-more-button text-center">
-                        <a href="#" class="btn newsbox-btn">Load More</a>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </div>

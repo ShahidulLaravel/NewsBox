@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\InternationalNews;
 use App\Models\LeftNews;
 use App\Models\PopularNews;
+use App\Models\TitleNews;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -54,6 +55,22 @@ class LeftNewsController extends Controller
             'inter_headline' => $request->inter_headline,
             'author' => $request->author,
             'inter_photo' => $file_name
+        ]);
+        return back()->with('success_two', 'International News Addedd Successfully');
+    }
+
+    public function title_news(){
+        return view('Admin.TitleNews.add');
+    }
+    public function insert_title_news(Request $request){
+        $uploaded_photo = $request->title_photo;
+        $extension = $uploaded_photo->getClientOriginalExtension();
+        $file_name = Str::lower(str_replace(' ', '-', 'title_news')) . '-' . rand(10, 100000) . '.' . $extension;
+        Image::make($uploaded_photo)->save('Uploads/Title/' . $file_name);
+
+        TitleNews::insert([
+            'title_headline' => $request->title_headline,
+            'title_photo' => $file_name
         ]);
         return back()->with('success_two', 'International News Addedd Successfully');
     }
