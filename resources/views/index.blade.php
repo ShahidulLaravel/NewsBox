@@ -167,130 +167,18 @@
                         </div>
                         <div id="breakingNewsTicker" class="ticker">
                             <ul>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.</a></li>
-                                <li><a href="#">Welcome to Colorlib Family.</a></li>
-                                <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque</a></li>
+                                @foreach ( $all_news_show as $breaking)
+                                    <li><a href="#">{{$breaking->breaking_news}}</a></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ##### Breaking News Area End ##### -->
-
-    <!-- ##### Hero Area Start ##### -->
-    <div class="hero-area">
-        <!-- Hero Post Slides -->
-        <div class="hero-post-slides owl-carousel">
-
-            <!-- Single Slide -->
-            <div class="single-slide">
-                <div class="container-fluid">
-                    <div class="row">
-                        <!-- Single Blog Post Area -->
-                        <div class="col-12 col-md-6">
-                            <div class="single-blog-post style-1" data-animation="fadeInUpBig" data-delay="100ms" data-duration="1000ms">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail bg-overlay">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/1.jpg')}}" alt=""></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <a href="#" class="post-title">Traffic Problems in Time Square</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 col-md-6">
-                            <!-- Single Blog Post Area -->
-                            <div class="single-blog-post style-1 mb-30" data-animation="fadeInUpBig" data-delay="300ms" data-duration="1000ms">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail bg-overlay">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/2.jpg')}}" alt=""></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <a href="#" class="post-title">The best way to spend your holliday</a>
-                                </div>
-                            </div>
-                            <!-- Single Blog Post Area -->
-                            <div class="single-blog-post style-1" data-animation="fadeInUpBig" data-delay="500ms" data-duration="1000ms">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail bg-overlay">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/3.jpg')}}" alt=""></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <a href="#" class="post-title">Sport results for the weekend games</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Slide -->
-            <div class="single-slide">
-                <div class="container-fluid">
-                    <div class="row">
-                        <!-- Single Blog Post Area -->
-                        <div class="col-12 col-md-6">
-                            <div class="single-blog-post style-1" data-animation="fadeInUpBig" data-delay="100ms" data-duration="1000ms">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail bg-overlay">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/1.jpg')}}" alt=""></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <a href="#" class="post-title">Traffic Problems in Time Square</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 col-md-6">
-                            <!-- Single Blog Post Area -->
-                            <div class="single-blog-post style-1 mb-30" data-animation="fadeInUpBig" data-delay="300ms" data-duration="1000ms">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail bg-overlay">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/2.jpg')}}" alt=""></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <a href="#" class="post-title">The best way to spend your holliday</a>
-                                </div>
-                            </div>
-                            <!-- Single Blog Post Area -->
-                            <div class="single-blog-post style-1" data-animation="fadeInUpBig" data-delay="500ms" data-duration="1000ms">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail bg-overlay">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/3.jpg')}}" alt=""></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <a href="#" class="post-title">Sport results for the weekend games</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- ##### Hero Area End ##### -->
 
     <!-- ##### Intro News Area Start ##### -->
     <section class="intro-news-area section-padding-100-0 mb-70">
@@ -308,7 +196,7 @@
                                     <a class="nav-item nav-link active" id="nav1" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-1" aria-selected="true">Latest</a>
                                     <a class="nav-item nav-link" id="nav2" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2" aria-selected="false">Popular</a>
                                     <a class="nav-item nav-link" id="nav3" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3" aria-selected="false">International</a>
-                                    <a class="nav-item nav-link" id="nav4" data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-4" aria-selected="false">Local</a>
+                                   
                                 </div>
                             </nav>
                         </div>
@@ -317,39 +205,27 @@
 
                             <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav1">
                                 <div class="row">
+                                    @foreach ($left_news as $left )
+                                        
                                     <!-- Single News Area -->
                                     <div class="col-12 col-sm-6">
                                         <div class="single-blog-post style-2 mb-5">
                                             <!-- Blog Thumbnail -->
                                             <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/14.jpg')}}" alt=""></a>
+                                                <a href="#"><img src="{{asset('Uploads/leftNews')}}/{{$left->photo}}" alt=""></a>
                                             </div>
 
                                             <!-- Blog Content -->
                                             <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
+                                                <span class="post-date">{{ \Carbon\Carbon::parse($left->from_date)->format('d :M :Y')}}</span>
+                                                <a href="#" class="post-title">{{$left->news_headline}}</a>
                                                 <a href="#" class="post-author">By Michael Smith</a>
                                             </div>
                                         </div>
                                     </div>
+                                    @endforeach
 
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/15.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   {{-- small news --}}
 
                                     <!-- Single News Area -->
                                     <div class="col-12 col-sm-6">
@@ -451,39 +327,26 @@
 
                             <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav2">
                                 <div class="row">
+                                    @foreach ($popular_news as $popular)                                              
                                     <!-- Single News Area -->
                                     <div class="col-12 col-sm-6">
                                         <div class="single-blog-post style-2 mb-5">
                                             <!-- Blog Thumbnail -->
                                             <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/4.jpg')}}" alt=""></a>
+                                                <a href="#"><img src="{{asset('Uploads/Popular')}}/{{$popular->popular_photo}}" alt=""></a>
                                             </div>
 
                                             <!-- Blog Content -->
                                             <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
+                                                <span class="post-date">{{ \Carbon\Carbon::parse($left->from_date)->format('d :M :Y')}}</span>
+                                                <a href="#" class="post-title">{{$popular->popular_headline}}</a>
+                                                <a href="#" class="post-author">By 
+                                                       {{$popular->author}}</a>
                                             </div>
                                         </div>
                                     </div>
+                                    @endforeach
 
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/5.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                     <!-- Single News Area -->
                                     <div class="col-12 col-sm-6">
@@ -585,173 +448,27 @@
 
                             <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav3">
                                 <div class="row">
+                                    @foreach($international_news as $international)
                                     <!-- Single News Area -->
                                     <div class="col-12 col-sm-6">
                                         <div class="single-blog-post style-2 mb-5">
                                             <!-- Blog Thumbnail -->
                                             <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/6.jpg')}}" alt=""></a>
+                                                <a href="#"><img src="{{asset('Uploads/International')}}/{{$international->inter_photo}}" alt=""></a>
                                             </div>
 
                                             <!-- Blog Content -->
                                             <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
+                                                <span class="post-date">{{ \Carbon\Carbon::parse($left->from_date)->format('d :M :Y')}}</span>
+                                                <a href="#" class="post-title">{{$international->inter_headline}}</a>
+                                                <a href="#" class="post-author">By  
+                                                    {{$international->author}}</a>
                                             </div>
                                         </div>
                                     </div>
+                                    @endforeach
 
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/7.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/16.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/17.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Nearly a quarter have no emergency savings</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/18.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Top bitcoin exchange says over $30 million stolen</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/19.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Top bitcoin exchange says over $30 million stolen</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/20.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Dow falls 287 points as trade war fears escalate</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post d-flex style-4 mb-30">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/21.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Dow falls 287 points as trade war fears escalate</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav4">
-                                <div class="row">
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/8.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Elon Musk: Tesla worker admitted to sabotage</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Single News Area -->
-                                    <div class="col-12 col-sm-6">
-                                        <div class="single-blog-post style-2 mb-5">
-                                            <!-- Blog Thumbnail -->
-                                            <div class="blog-thumbnail">
-                                                <a href="#"><img src="{{asset('Frontend/img/bg-img/9.jpg')}}" alt=""></a>
-                                            </div>
-
-                                            <!-- Blog Content -->
-                                            <div class="blog-content">
-                                                <span class="post-date">June 20, 2018</span>
-                                                <a href="#" class="post-title">Rachel Sm ith breaks down while discussing border crisis</a>
-                                                <a href="#" class="post-author">By Michael Smith</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
 
                                     <!-- Single News Area -->
                                     <div class="col-12 col-sm-6">
@@ -882,135 +599,6 @@
         </div>
     </section>
     <!-- ##### Intro News Area End ##### -->
-
-    <!-- ##### Video Area Start ##### -->
-    <section class="video-area bg-img bg-overlay bg-fixed" style="background-image: url({{asset('Frontend/img/bg-img/10.jpg')}});">
-        <div class="container">
-            <div class="row">
-                <!-- Featured Video Area -->
-                <div class="col-12">
-                    <div class="featured-video-area d-flex align-items-center justify-content-center">
-                        <div class="video-content text-center">
-                            <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                            <span class="published-date">June 20, 2018</span>
-                            <h3 class="video-title">Traffic Problems in Time Square</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Video Slideshow -->
-        <div class="video-slideshow py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Video Slides -->
-                        <div class="video-slides owl-carousel">
-
-                            <!-- Single News Area -->
-                            <div class="single-blog-post style-3">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/11.jpg')}}" alt=""></a>
-                                    <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <p class="post-title">Elon Musk: Tesla worker admitted to sabotage</p>
-                                    <a href="#" class="post-author">By Michael Smith</a>
-                                </div>
-                            </div>
-
-                            <!-- Single News Area -->
-                            <div class="single-blog-post style-3">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/12.jpg')}}" alt=""></a>
-                                    <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <p class="post-title">Rachel Sm ith breaks down while discussing border crisis </p>
-                                    <a href="#" class="post-author">By Michael Smith</a>
-                                </div>
-                            </div>
-
-                            <!-- Single News Area -->
-                            <div class="single-blog-post style-3">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/13.jpg')}}" alt=""></a>
-                                    <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <p class="post-title">Dow falls 287 points as trade war fears escalate</p>
-                                    <a href="#" class="post-author">By Michael Smith</a>
-                                </div>
-                            </div>
-
-                            <!-- Single News Area -->
-                            <div class="single-blog-post style-3">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/11.jpg')}}" alt=""></a>
-                                    <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <p class="post-title">Elon Musk: Tesla worker admitted to sabotage</p>
-                                    <a href="#" class="post-author">By Michael Smith</a>
-                                </div>
-                            </div>
-
-                            <!-- Single News Area -->
-                            <div class="single-blog-post style-3">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/12.jpg')}}" alt=""></a>
-                                    <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <p class="post-title">Rachel Sm ith breaks down while discussing border crisis </p>
-                                    <a href="#" class="post-author">By Michael Smith</a>
-                                </div>
-                            </div>
-
-                            <!-- Single News Area -->
-                            <div class="single-blog-post style-3">
-                                <!-- Blog Thumbnail -->
-                                <div class="blog-thumbnail">
-                                    <a href="#"><img src="{{asset('Frontend/img/bg-img/13.jpg')}}" alt=""></a>
-                                    <a href="#" class="video-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-                                </div>
-
-                                <!-- Blog Content -->
-                                <div class="blog-content">
-                                    <span class="post-date">June 20, 2018</span>
-                                    <p class="post-title">Dow falls 287 points as trade war fears escalate</p>
-                                    <a href="#" class="post-author">By Michael Smith</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Video Area End ##### -->
 
     <!-- ##### Top News Area Start ##### -->
     <div class="top-news-area section-padding-100">
@@ -1167,13 +755,7 @@
                             <a href="#" data-toggle="tooltip" data-placement="top" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </div>
 
-                        <p class="mb-15">Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis. Vestibulum venenatis iaculis diam vitae lobortis. Donec tincidunt viverra elit, sed consectetur est pr etium ac. Mauris nec mauris tellus. </p>
 
-                        <!-- Copywrite Text -->
-                        <p class="copywrite-text"><a href="#">
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                 </div>
             </div>

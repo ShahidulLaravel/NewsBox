@@ -107,11 +107,25 @@
             <li class="nav-item dropdown">
               <a href="#ui-elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
                 <i class="fe fe-box fe-16"></i>
-                <span class="ml-3 item-text">User Information</span>
+                <span class="ml-3 item-text">Breaking News</span>
               </a>
               <ul class="collapse list-unstyled pl-4 w-100" id="ui-elements">
                 <li class="nav-item">
-                  <a class="nav-link pl-3" href="#"><span class="ml-1 item-text">Users List</span>
+                  <a class="nav-link pl-3" href="{{route('news.breaking')}}"><span class="ml-1 item-text">Add Breaking</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            {{-- copy end --}}
+            {{-- copy this --}}
+            <li class="nav-item dropdown">
+              <a href="#left_news" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                <i class="fe fe-box fe-16"></i>
+                <span class="ml-3 item-text">Left News</span>
+              </a>
+              <ul class="collapse list-unstyled pl-4 w-100" id="left_news">
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="{{route('news.left')}}"><span class="ml-1 item-text">Add Left News</span>
                   </a>
                 </li>
               </ul>

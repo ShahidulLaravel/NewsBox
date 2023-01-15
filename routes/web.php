@@ -2,7 +2,10 @@
 
 use App\Http\Controllers\Frontend;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LeftNewsController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\UserController;
+use App\Models\BreakingNews;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -26,5 +29,18 @@ Route::post('users/update_image/', [UserController::class, 'update_image'])->nam
 
 
 // main news site develop start here
+
+Route::get('/show/breaking_news', [NewsController::class, 'add_breaking'])->name('news.breaking');
+
+Route::post('/insert/breaking', [NewsController::class, 'insert_breaking'])->name('insert.breaking');
+
+//left side news
+Route::get('/show/left_news', [LeftNewsController::class, 'show_left_news'])->name('news.left');
+
+Route::post('/insert/left_news', [LeftNewsController::class, 'insert_left_news'])->name('insert.left');
+
+Route::post('/insert/popular_news', [LeftNewsController::class, 'popular_news'])->name('popular.news');
+
+Route::post('/insert/international_news', [LeftNewsController::class, 'international_news'])->name('international.news');
 
 
