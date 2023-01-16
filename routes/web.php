@@ -56,8 +56,15 @@ Route::post('/insert/title_news', [LeftNewsController::class, 'insert_title_news
 
 Route::get('/show/news_category', [NewsCategoryController::class, 'news_category'])->name('add.category'); 
 
-Route::post('/insert/news_category', [NewsCategoryController::class, 'news_category_insert'])->name('category.insert'); 
- 
+Route::post('/insert/news_category', [NewsCategoryController::class, 'news_category_insert'])->name('category.insert');
+
+// singel news 
+
+Route::get('/show/singel_news', [NewsCategoryController::class, 'news_body'])->name('add.singel_news'); 
+
+Route::post('/insert/single_news', [NewsCategoryController::class, 'news_body_insert'])->name('insert.single_news');
+
+Route::get('/show/news_body', [NewsCategoryController::class, 'news_body_show'])->name('newsbody'); 
 
 
 

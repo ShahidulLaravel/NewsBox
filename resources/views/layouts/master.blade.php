@@ -150,6 +150,23 @@
             </li>
             {{-- copy end --}}
 
+            {{-- copy this --}}
+            <li class="nav-item dropdown">
+              <a href="#singel_news" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                <i class="fe fe-box fe-16"></i>
+                <span class="ml-3 item-text">News Body</span>
+              </a>
+              <ul class="collapse list-unstyled pl-4 w-100" id="singel_news">
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="{{route('add.singel_news')}}"><span class="ml-1 item-text">Add Singel News</span>
+                 
+                  </a>
+                </li>
+              </ul>
+            </li>
+            {{-- copy end --}}
+
+
           </ul>
         </nav>
       </aside>

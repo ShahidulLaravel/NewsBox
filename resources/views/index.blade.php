@@ -253,7 +253,7 @@
                                             <!-- Blog Content -->
                                             <div class="blog-content">
                                                 <span class="post-date">{{ \Carbon\Carbon::parse($left->from_date)->format('d :M :Y')}}</span>
-                                                <a href="#" class="post-title">{{$popular->popular_headline}}</a>
+                                                <a href="{{route('newsbody')}}" class="post-title">{{$popular->popular_headline}}</a>
                                                 <a href="#" class="post-author">By 
                                                        {{$popular->author}}</a>
                                             </div>
@@ -295,7 +295,7 @@
                                             <!-- Blog Content -->
                                             <div class="blog-content">
                                                 <span class="post-date">{{ \Carbon\Carbon::parse($left->from_date)->format('d :M :Y')}}</span>
-                                                <a href="#" class="post-title">{{$international->inter_headline}}</a>
+                                                <a href="{{route('newsbody')}}" class="post-title">{{$international->inter_headline}}</a>
                                                 <a href="#" class="post-author">By  
                                                     {{$international->author}}</a>
                                             </div>

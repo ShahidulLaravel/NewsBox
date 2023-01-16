@@ -32,4 +32,6 @@ class Frontend extends Controller
         ]);
     }
 
+    
+
 }
